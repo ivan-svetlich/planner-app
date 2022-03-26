@@ -1,0 +1,61 @@
+ .menu {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 2em !important;
+  margin: 0.25em auto 0 0;
+  padding: 0.2em;
+  background-color: #faf7f2;
+  color: #675d54;
+  cursor: pointer;
+  border: 1px solid #675d54;
+  font: 20px "Delius", serif bold;
+}
+ 
+ /* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #675d54; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav .menu-link {
+  padding: 8px 8px 8px 20px;
+  text-decoration: none;
+  text-align: left;
+  font-size: 25px;
+  color: #faf7f2;
+  display: block;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+
+  margin-left: auto;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  cursor: pointer;
+  color: #f1f1f1;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 34px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+} 

@@ -1,0 +1,335 @@
+#calendar {
+  width: 80vw;
+  height: 0;
+  transition: 1s;
+}
+
+#calendar.is-visible {
+  height: auto !important;
+  overflow: hidden;
+  min-height: 100vh;
+  margin: 0.5em 0 2em 0;
+  background-color: #faf7f2;
+  padding: 1em 2em 2em 2em;
+  color: #675d54;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  margin-bottom: 2em;
+  font: 20px "Delius", serif;
+  width: auto;
+  height: 27px;
+  text-align: left;
+  color: #675d54;
+  display: flex;
+  flex-direction: row-reverse ;
+  align-items: flex-start;
+}
+
+.user {
+  margin-right: auto;
+}
+
+.user .username {
+  font: 26px "Indie Flower";
+  font-weight: bold;
+}
+
+.logout-btn {
+  color: #675d54;
+  background-color: #faf7f2;
+  border-bottom: 2px solid #675d54;
+  cursor: pointer;
+  font: 16px "Delius", serif;
+  padding: 0.3em;
+}
+
+.logout:focus ~ .user > .username,
+.logout:hover ~ .user > .username {
+  text-decoration: line-through;
+}
+
+.list-date {
+  color: #675d54;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #675d54;
+}
+.list-date .month {
+  margin-right: 1em;
+  display: flex;
+}
+.list-date select {
+  color: inherit;
+  background-color: inherit;
+  border: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+.list-date select:hover {
+  background-color: #675d54;
+  color: #faf7f2;
+}
+.list-date .week {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: auto;
+}
+@media screen and (max-width: 880px) {
+  .app-header {
+    flex-direction: column;
+    text-align: left;
+  }
+  .app-header .user {
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+  }
+  .list-date {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: auto;
+  }
+  .list-date .year {
+    margin-left: 0 !important;
+  }
+  .list-date .month {
+    text-align: left;
+  }
+  .logout, .today-btn-container {
+    visibility: hidden; 
+    height: 0;
+    pointer-events: none;
+  } 
+
+  .completed::after {
+    height: 0px !important;
+    width: 0 !important;
+    color: transparent !important;
+  }
+
+  .completed {
+    text-decoration: line-through;
+  }
+} 
+.list-date .current-week {
+  margin: 0 0.5em 0 0.5em;
+  display: flex;
+  flex-direction: row;
+  white-space: pre;
+  font-size: 20px;
+}
+.list-date .text-bold {
+  font-weight: bold;
+}
+.list-date .year {
+  margin-left: auto;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 30px;
+}
+.list-date .current-year {
+  margin: 0 0.5em 0 0.5em;
+  display: flex;
+  flex-direction: row;
+  white-space: pre;
+}
+
+.todo-line {
+  font: 20px "Delius", serif;
+  min-height: 27px;
+  height: fit-content;
+  text-align: left;
+  color: #675d54;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+
+.pen-img {
+  width: 200px;
+}
+
+.calendar-entries{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-description {
+  margin: 0.5em;
+  flex: 1;
+  word-wrap: break-word;
+  border-bottom: 1px solid #675d54;
+  min-width: 0;
+}
+
+.day-container {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #675d54;
+  flex: 1;
+}
+.day-container .day {
+  font: 26px "Rochester";
+  writing-mode: vertical-lr;
+  transform: rotate(-180deg);
+  margin-right: 0.5em;
+  min-height: 160px;
+  min-width: 58px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.prev-month {
+  font: 18px "Delius", serif;
+}
+
+.daily-entries {
+  padding-top: 1em;
+  padding-bottom: 2em;
+  flex: 1;
+  overflow-x: scroll;
+}
+
+.add-btn {
+  background-color: transparent;
+  color: #675d54;
+  font-size: 20px;
+  border: 0;
+  cursor: pointer;
+  height: 95%;
+  display: inline-flex;
+  align-items: center;
+}
+.add-btn:active {
+  background-color: #675d54;
+  color: #faf7f2;
+}
+
+.add-input {
+  border: 0 !important;
+  background-color: transparent;
+  color: #675d54;
+  max-height: inherit;
+  font: 19px "Delius", serif;
+  width: 100%;
+}
+.add-input:focus {
+  outline: none;
+}
+
+.page-footer {
+  width: 80%;
+  margin: 1em auto 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.done-btn {
+  background-color: transparent;
+  color: #675d54;
+  cursor: pointer;
+  border-bottom: 1px solid #675d54;
+  box-shadow: none;
+  height: fit-content;
+  display: inline-flex;
+  align-items: center; 
+  font: 20px "Delius", serif;
+}
+
+@keyframes strike{
+  0%   { width : 0; }
+  100% { width: 100%; }
+}
+.completed {
+  position: relative;
+}
+.completed::after {
+  content: ' ';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: black;
+  animation-name: strike;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; 
+}
+
+/* .completed {
+  text-decoration: line-through;
+} */
+
+.removed {
+  text-decoration: line-through wavy;
+  color: #675d5493;
+}
+
+.disabled {
+  color: #675d5493 !important;
+  pointer-events: none;
+}
+
+.invisible {
+  color: transparent;
+}
+
+.max-length {
+  border: 1px solid red !important;
+}
+
+.bold {
+  font-weight: bold !important;
+}
+
+.todo-completed {
+  margin-left: 0.3em;
+  margin-right: 0.3em;
+  height: inherit;
+}
+
+.today-btn {
+  margin-left: 1em;
+  color: #675d54;
+  background-color: #faf7f2;
+  border: 2px solid #675d54;
+  cursor: pointer;
+  font: 16px "Delius", serif;
+  padding: 0.3em;
+}
+
+.remove-btn {
+  background-color: transparent;
+  color: #675454;
+  cursor: pointer;
+  border: none;
+  box-shadow: none;
+  height: fit-content;
+  display: inline-flex;
+  align-items: center; 
+  align-self: center;
+  justify-self: center;
+  font: 20px "Delius", serif;
+}
+
+.icon {
+  background-color: transparent;
+}
+
+/*# sourceMappingURL=style.css.map */

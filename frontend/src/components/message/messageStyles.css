@@ -1,0 +1,25 @@
+#error-container {
+    color: #faf7f2;
+    border: 1px solid #faf7f2;
+    background-color: #675d54;;
+    height: 3.5em;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    font-size: 18px;
+    margin: 0.5em 0 0 0;
+}
+
+#error-container .close-btn {
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 0.5em;
+}
+
+#error-container .error {
+  display: block;
+  transition: 0.3s;
+  overflow: hidden;
+  margin: 0 0.5em 0 0.5em;
+}
