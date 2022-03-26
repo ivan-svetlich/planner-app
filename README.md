@@ -7,7 +7,7 @@ This is the Java-Spring version. Also, take a look at the [.NET version](https:/
 * [Appearance](#appearance)
 
 ## General Info
-Calendar app with a realistic design where users can write down their reminders.
+Appointment Book app with a realistic design where users can write down their reminders.
 
 ## Technologies
 ### This project was designed with:
