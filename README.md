@@ -31,23 +31,23 @@ Calendar app with a realistic design where users can write down their reminders.
 ![2](https://github.com/ivan-svetlich/calendar-app-client/blob/master/images/2.png)
 
 
-### Calendar
-Users can navigate through the calendar and add their notes.
+### Your personal appointment book
+Navigate through the calendar and add your notes.
 
 ![3](https://github.com/ivan-svetlich/calendar-app-client/blob/master/images/3.png)
 
 
-### Adding notes
+### Add your notes
 ![4](https://github.com/ivan-svetlich/calendar-app-client/blob/master/images/4.png)
 
 
-### Marking notes as completed
+### Keep track of the tasks you've completed
 Notes marked as completed are crossed out.
 
 ![5](https://github.com/ivan-svetlich/calendar-app-client/blob/master/images/5.png)
 
 
-### Removing notes
+### Erase notes
 Removed notes are shown with less opacity and crossed out by a wavy line, and will dissapear on next page load.
 
 ![6](https://github.com/ivan-svetlich/calendar-app-client/blob/master/images/6.png)
