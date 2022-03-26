@@ -19,8 +19,7 @@ Calendar app with a realistic design where users can write down their reminders.
 #### Other relevant technologies used:
 * Redux
 * JSON Web Tokens (jwt)
-* Formik
-* Yup
+* Formik - Yup
 
 ## Appearance
 ### Signup form
