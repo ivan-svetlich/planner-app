@@ -7,7 +7,7 @@ This is the Java-Spring version. Also, take a look at the [.NET version](https:/
 * [Appearance](#appearance)
 
 ## General Info
-Appointment Book app with a realistic design where users can write down their reminders.
+Appointment Book app to keep track of important deadlines, special events and more with clear organization.
 
 ## Technologies
 ### This project was designed with:
