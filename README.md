@@ -11,9 +11,9 @@ Appointment Book app to keep track of important deadlines, special events and mo
 
 ## Technologies
 ### This project was designed with:
-* Java 11 - Spring
-* TypeScript (version: 4.5.2)
-* React.js (version: 17.0.2)
+* Java 11 - Spring (v. 2.6.4)
+* TypeScript (v. 4.5.2)
+* React.js (v. 17.0.2)
 * PostgreSQL
 
 #### Other relevant technologies used:
